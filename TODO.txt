@@ -1,0 +1,24 @@
+-API 
+    Enviar la carpeta y recursivamente todos los archivos dentro, renombrar los 0.html con el nombre de la conversacion
+
+-HTML
+    Estilos y Maquetacion
+
+-PARSER HTML
+    Interpretar bloques de mensajes
+
+-BUSQUEDA
+    No tengo idea de como voy a hacer esto :v
+    (Por conversacion, multiples conversaciones o buscar en todo)
+        Palabra %%
+        Segmento
+        Palabra completa
+        CamelCase
+        Desde 00-00-000
+        Rango desde hasta 00-00-000
+        Desplegar todas las fotos
+        Desplegar todos los archivos
+        Desplegar todos los audios
+
+    Mensajes favoritos
+

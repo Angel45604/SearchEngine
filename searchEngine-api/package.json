@@ -1,0 +1,31 @@
+{
+  "name": "searchengine-api",
+  "version": "1.0.0",
+  "description": "Pendiente",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "set DEBUG=search-engine.^ & nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Angel45604/SearchEngine.git"
+  },
+  "author": "Angel Marcos <angel.mauricio.marcos@live.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Angel45604/SearchEngine/issues"
+  },
+  "homepage": "https://github.com/Angel45604/SearchEngine#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
+    "debug": "^4.0.1",
+    "express": "^4.16.3",
+    "express-asyncify": "^1.0.0",
+    "html-parser": "^0.11.0",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.0",
+    "nodemon": "^1.18.4"
+  }
+}

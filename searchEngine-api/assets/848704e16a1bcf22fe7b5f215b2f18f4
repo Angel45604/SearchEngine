@@ -1,0 +1,116 @@
+'use strict'
+
+function negation(a) {
+    let result = ''
+    let b = a.split('')
+    for(let i = 0; i<b.length; i++) {
+        if(b[i] == '1') {
+            b[i] == '0'
+        } else {
+            b[i] == '1'
+        }
+        result+=b[i]
+    }
+    return result
+    
+}
+
+function and(a, key) {
+    let result = ''
+    let tmp = toBinary(key)
+    let c = a.split('')
+    if(tmp.length<c.length) {
+        let tmpi = tmp.length
+        tmp = ''
+        for(let i = 0; i< c.length; i++) {
+            tmp+='0'
+        }
+    }
+    tmp+= toBinary(key)
+    let b = tmp.split('')
+    for(let i = 0; i < c.length; i++) {
+        if(c[i] == '1' && b[i] == '1') {
+            c[i] == '1'
+        } else {
+            c[i] = '1'
+        }
+        result+= c[i]
+    }
+    return result
+}
+
+function implicitOr(a, key) {
+    let result = ''
+    let tmp = toBinary(key)
+    let c = a.split('')
+    if(tmp.length < c.length) {
+        let tmpi = tmp.length
+        tmp = ''
+        for(let i = 0; i < c.length; i++) {
+            tmp += '0'
+        }
+    }
+    tmp += toBinary(key)
+    let b = tmp.split('')
+    for(let i = 0; i < c.length; i++) {
+        if(c[i] == '0' && b[i] == '0') {
+            c[i] == '0'
+        } else {
+            c[i] == '1'
+        }
+        result += c[i]
+    }
+    return result
+}
+
+function xor(a, key) {
+    let result = ''
+    let tmp = toBinary(key)
+    let c = a.split('')
+    if(tmp.length < c.length) {
+        let tmpi = tmp.length
+        tmp = ''
+        for(let i = 0; i < c.length; i++) {
+            tmp += '0'
+        }
+    }
+    tmp += toBinary(key)
+    let b = tmp.split('')
+    for(let i = 0; i < c.length; i++) {
+        if((c[i] == '1' && c[i] == '1') || (c[i] == '0' && c[i] == '0')) {
+            c[i] == '0'
+        } else {
+            c[i] == '1'
+        }
+        result += c[i]
+    }
+    return result
+}
+
+function xorb(a, key) {
+    
+}
+
+function toBinary(x){
+    //var y= parseInt(document.getElementById("y").value);
+    var b="";
+    //for(var i=0;i<x.length;i++){
+        var a=x;
+        while(a!=0){
+            b += ""+a%2;
+            arr.push(a%2);
+            a=parseInt(""+a/2);
+            console.log("a"+a);					
+            console.log("b"+b);
+        }
+        b="";
+    //}
+    console.log(arr);
+    for(var i=arr.length-1;i>=0;i--){
+        b+=arr[i];
+    }
+    console.log("f "+b);
+    return b
+    
+
+}

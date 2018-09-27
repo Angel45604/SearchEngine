@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas 1</title>
+	<style>
+		body{
+			background:#000;
+		}
+	</style>
+</head>
+<body onload="setInterval(draw,10)" onkeypress="return dynamic(event)">
+	<canvas width="500px" height="500px" id="canvas"></canvas>
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
